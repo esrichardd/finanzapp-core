@@ -17,6 +17,11 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
-    "paths": {}
+    "paths": {
+      "@libs/healthcheck": ["libs/healthcheck/src"],
+      "@libs/healthcheck/*": ["libs/healthcheck/src/*"],
+      "@libs/logger": ["libs/logger/src"],
+      "@libs/logger/*": ["libs/logger/src/*"]
+    }
   }
 }

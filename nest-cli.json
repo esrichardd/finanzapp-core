@@ -36,6 +36,24 @@
       "compilerOptions": {
         "tsConfigPath": "apps/auth/tsconfig.app.json"
       }
+    },
+    "healthcheck": {
+      "type": "library",
+      "root": "libs/healthcheck",
+      "entryFile": "index",
+      "sourceRoot": "libs/healthcheck/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/healthcheck/tsconfig.lib.json"
+      }
+    },
+    "logger": {
+      "type": "library",
+      "root": "libs/logger",
+      "entryFile": "index",
+      "sourceRoot": "libs/logger/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/logger/tsconfig.lib.json"
+      }
     }
   }
 }
