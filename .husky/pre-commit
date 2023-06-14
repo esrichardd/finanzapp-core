@@ -1,0 +1,27 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '🏗️👷 Styling, linting and building your project before committing'
+
+# Run checks only on staged-files
+yarn lint-staged ||
+(
+        echo '🧪🔥 Linting the staged files failed. 🧪🔥
+                Make the required changes listed above, add changes and try to commit again.'
+        false;
+)
+
+# If everything passes... Now we can commit
+echo '✅ Alright. Code looks good, trying to build now...'
+
+yarn build ||
+(
+        echo '🧪🔥 Build failed 🧪🔥
+                View the errors above to see why.'
+        false;
+)
+
+echo '✅✅✅✅ Everything looks good, commiting changes. ✅✅✅✅'

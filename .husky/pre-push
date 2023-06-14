@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '🏗️👷 Testing your projects before pushing'
+
+# Check Testing pass Standards
+yarn test --changedSince develop ||
+(
+        echo '🧪🔥 Testing the application failed 🧪🔥
+                Make the required changes listed above, add changes and try to commit again.'
+        false;
+)
+
+# If everything passes... Now we can commit
+echo '✅✅✅✅ Everything looks good, pushing changes. ✅✅✅✅'
