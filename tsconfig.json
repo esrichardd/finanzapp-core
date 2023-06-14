@@ -21,7 +21,11 @@
       "@libs/healthcheck": ["libs/healthcheck/src"],
       "@libs/healthcheck/*": ["libs/healthcheck/src/*"],
       "@libs/logger": ["libs/logger/src"],
-      "@libs/logger/*": ["libs/logger/src/*"]
+      "@libs/logger/*": ["libs/logger/src/*"],
+      "libs/persistence": ["libs/persistence/src"],
+      "libs/persistence/*": ["libs/persistence/src/*"],
+      "libs/utils": ["libs/utils/src"],
+      "libs/utils/*": ["libs/utils/src/*"]
     }
   }
 }
