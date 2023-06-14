@@ -7,7 +7,7 @@
 echo '🏗️👷 Testing your projects before pushing'
 
 # Check Testing pass Standards
-yarn test --changedSince develop ||
+yarn test --changedSince master ||
 (
         echo '🧪🔥 Testing the application failed 🧪🔥
                 Make the required changes listed above, add changes and try to commit again.'
