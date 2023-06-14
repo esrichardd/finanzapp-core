@@ -18,10 +18,10 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "paths": {
-      "@app/healthcheck": ["libs/healthcheck/src"],
-      "@app/healthcheck/*": ["libs/healthcheck/src/*"],
-      "@app/logger": ["libs/logger/src"],
-      "@app/logger/*": ["libs/logger/src/*"]
+      "@libs/healthcheck": ["libs/healthcheck/src"],
+      "@libs/healthcheck/*": ["libs/healthcheck/src/*"],
+      "@libs/logger": ["libs/logger/src"],
+      "@libs/logger/*": ["libs/logger/src/*"]
     }
   }
 }
